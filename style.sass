@@ -1,0 +1,111 @@
+$border_radius: 50px
+
+$banner_color: #395c6b
+$list_color: #e6e1c5
+$content_color: #f5f5f5d0
+
+
+
+*
+  // border: 1px solid 
+
+body
+  margin: 0
+
+.content
+  position: relative
+  width: 1150px
+  margin-left: auto
+  margin-right: auto
+  // background-color: white
+  background-color: $content_color
+  border-radius: $border_radius
+  top: 30px
+
+.top
+  position: relative
+  height: 200px
+  background-color: $banner_color
+  border-top-left-radius: $border_radius
+  border-top-right-radius: $border_radius
+ 
+.t_left,.t_right
+  display: inline-block
+  box-sizing: border-box
+
+.t_left
+  width: 35%
+  background-color: red
+
+.t_right
+  position: absolute
+  width: 60%
+  background-color: $banner_color
+  top: 30px
+  padding: 10px
+  font-size: 36px
+  color: #ffffff
+  border: 1px solid red
+
+
+.bottom
+  position: relative
+  height: 1200px
+  background-color: white
+  background-color: $content_color
+
+
+.left,.right
+  display: inline-block
+  box-sizing: border-box
+  color: $banner_color
+  
+
+.left
+  position: relative
+  width: 25%
+  height: 100%
+  background-color: $list_color
+  top: -10%
+  left: 5%
+  height: 113%
+
+.right
+  position: relative
+  width: 60%
+  height: 90%
+  top: 5%
+  left: 10%
+  background-color: $content_color
+  border: 1px solid red
+  vertical-align: top
+
+  
+.end
+  height: 75px
+  border-bottom-left-radius: $border_radius
+  border-bottom-right-radius: $border_radius
+  background-color: $banner_color
+
+.photo
+  position: relative
+  // border: 2px solid red
+  border-radius: 100%
+  width: 150px
+  height: 150px
+  background-color: $banner_color
+  margin-left: auto
+  margin-right: auto
+  top: 20px
+
+.introduce
+  position: relative
+  top: 20px
+  // border: 2px solid red
+  padding: 25px
+
+.bottom_line
+  border-bottom: 3px solid $banner_color
+
+.list_title
+  font-size: 24px
