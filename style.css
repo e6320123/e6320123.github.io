@@ -2,77 +2,109 @@ body {
   margin: 0;
 }
 
+html {
+  background-image: url("daly.png");
+  background-repeat: no-repeat;
+  background-size: 100% 110%;
+}
+
 .content {
   position: relative;
   width: 1150px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #f5f5f5d0;
+  background-color: #39434f;
   border-radius: 50px;
   top: 30px;
+  -webkit-box-shadow: 10px 10px 8px #888888;
+          box-shadow: 10px 10px 8px #888888;
+  border: 2px solid #39434f;
 }
 
 .top {
   position: relative;
   height: 200px;
-  background-color: #395c6b;
+  background-color: #39434f;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
 
-.t_left, .t_right {
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.t_left {
-  width: 35%;
-  background-color: red;
-}
-
-.t_right {
+.top .t_right {
   position: absolute;
+  right: 5%;
+  top: 35%;
   width: 60%;
-  background-color: #395c6b;
-  top: 30px;
-  padding: 10px;
   font-size: 36px;
-  color: #ffffff;
-  border: 1px solid red;
+  color: #eeeeee;
 }
 
 .bottom {
   position: relative;
   height: 1200px;
   background-color: white;
-  background-color: #f5f5f5d0;
+  background-color: #eeeeee;
 }
 
-.left, .right {
+.bottom .left, .bottom .right {
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #395c6b;
+  color: #39434f;
 }
 
-.left {
+.bottom .left {
   position: relative;
   width: 25%;
-  height: 100%;
-  background-color: #e6e1c5;
-  top: -10%;
+  height: 111%;
+  top: -8%;
   left: 5%;
-  height: 113%;
+  overflow: hidden;
+  border-radius: 6px;
 }
 
-.right {
+.bottom .left .introduce {
+  position: relative;
+  top: 20px;
+  padding: 25px;
+  background-color: #d4d3d5;
+  height: 100%;
+}
+
+.bottom .left .introduce .list_title {
+  font-size: 24px;
+}
+
+.bottom .left .introduce .bottom_line {
+  border-bottom: 3px solid #39434f;
+}
+
+.bottom .left .photo {
+  position: relative;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 20px;
+  -webkit-box-shadow: #d4d3d5 0 0 0 100px;
+          box-shadow: #d4d3d5 0 0 0 100px;
+}
+
+.bottom .left .photo .pic {
+  position: relative;
+  top: 10px;
+  font-size: 81px;
+  color: #9A9A9B;
+  text-align: center;
+}
+
+.bottom .right {
   position: relative;
   width: 60%;
   height: 90%;
   top: 5%;
   left: 10%;
-  background-color: #f5f5f5d0;
+  background-color: #eeeeee;
   border: 1px solid red;
   vertical-align: top;
 }
@@ -81,31 +113,10 @@ body {
   height: 75px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  background-color: #395c6b;
+  background-color: #39434f;
 }
 
-.photo {
-  position: relative;
-  border-radius: 100%;
-  width: 150px;
-  height: 150px;
-  background-color: #395c6b;
-  margin-left: auto;
-  margin-right: auto;
-  top: 20px;
-}
-
-.introduce {
-  position: relative;
-  top: 20px;
-  padding: 25px;
-}
-
-.bottom_line {
-  border-bottom: 3px solid #395c6b;
-}
-
-.list_title {
-  font-size: 24px;
+.end .extend {
+  height: 122px;
 }
 /*# sourceMappingURL=style.css.map */
