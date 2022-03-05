@@ -27,18 +27,50 @@ html {
   background-color: #39434f;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  border: 0px solid red;
 }
 
 .top .t_right {
   position: absolute;
   right: 5%;
-  top: 35%;
+  top: 15%;
   width: 60%;
-  font-size: 36px;
+  font-size: 42px;
   color: #eeeeee;
+  text-align: center;
+  letter-spacing: 15px;
+  border: 0px solid blue;
+  letter-spacing: 30px;
+}
+
+.top .top_bottom_line {
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  width: 32%;
+  font-size: 42px;
+  color: #eeeeee;
+  text-align: center;
+  letter-spacing: 15px;
+  border: 0px solid blue;
+  border-top: 3px solid #eeeeee;
+}
+
+.top .job_name {
+  position: absolute;
+  right: 20%;
+  top: 60%;
+  width: 30%;
+  font-size: 42px;
+  color: #eeeeee;
+  text-align: center;
+  letter-spacing: 15px;
+  border: 0px solid blue;
+  font-size: 36px;
 }
 
 .bottom {
+  border: 0px solid red;
   position: relative;
   height: 1200px;
   background-color: white;
@@ -46,6 +78,7 @@ html {
 }
 
 .bottom .left, .bottom .right {
+  border: 0px solid blue;
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -63,6 +96,7 @@ html {
 }
 
 .bottom .left .introduce {
+  border: 0px solid green;
   position: relative;
   top: 20px;
   padding: 25px;
@@ -75,10 +109,12 @@ html {
 }
 
 .bottom .left .introduce .bottom_line {
-  border-bottom: 3px solid #39434f;
+  border-bottom: 2px solid #39434f;
+  margin: 10px 0px;
 }
 
 .bottom .left .photo {
+  border: 0px solid green;
   position: relative;
   border-radius: 100%;
   width: 150px;
@@ -91,6 +127,7 @@ html {
 }
 
 .bottom .left .photo .pic {
+  border: 0px solid orange;
   position: relative;
   top: 10px;
   font-size: 81px;
@@ -99,13 +136,13 @@ html {
 }
 
 .bottom .right {
+  border: 0px solid blue;
   position: relative;
   width: 60%;
   height: 90%;
   top: 5%;
   left: 10%;
   background-color: #eeeeee;
-  border: 1px solid red;
   vertical-align: top;
 }
 
@@ -114,9 +151,53 @@ html {
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   background-color: #39434f;
+  border: 0px solid red;
 }
 
 .end .extend {
+  border: 0px solid blue;
   height: 122px;
+}
+
+svg {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+svg path {
+  fill: #39434f;
+}
+
+.intr_content {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#mobile .st0 {
+  fill: #39434f;
+}
+
+#mobile .st1 {
+  fill: #d4d3d5;
+}
+
+.small_ldot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #eeeeee;
+  top: -7px;
+}
+
+.small_rdot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #eeeeee;
+  top: -7px;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */

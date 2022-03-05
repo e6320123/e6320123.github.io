@@ -6,10 +6,28 @@ $content_color: rgb(238, 238, 238)
 $background_img: "daly.png"
 $photo_color: #9A9A9B
 
+$border1: 0px solid red
+$border2: 0px solid blue
+$border3: 0px solid green
+$border4: 0px solid orange
+$border5: 0px solid purple
+
 @mixin lr_center()
   margin-left: auto
   margin-right: auto
 
+@mixin top_center($top:15%, $r:5%, $w:60%, $word_size:42px)
+  position: absolute
+  right: $r
+  top: $top
+  width: $w
+  font-size: $word_size
+  color: $content_color
+  text-align: center
+  letter-spacing: 15px
+  border: $border2
+
+    
 // $photo_color: 
 //#A7BF9B
 //#ABABB1
@@ -27,9 +45,7 @@ $photo_color: #9A9A9B
 // #f5f5f5d0
 // #eee0cb
 //rgb(238, 238, 238)
-
-*
-  // border: 1px solid 
+ 
 body
   margin: 0
 html
@@ -56,26 +72,32 @@ html
   border-top-left-radius: $border_radius
   border-top-right-radius: $border_radius
   // background-image: url("bg.png")
+  border: $border1
+
   & .t_right
-    position: absolute
-    right: 5%
-    top: 35%
-    width: 60%
-    // background-color: $banner_color
+    // top_center($top:15%, $r:5%, $w:60%, $word_size:42px)
+    +top_center() 
+    letter-spacing: 30px
+  & .top_bottom_line
+    +top_center(50%, 20%, 32%)
+    border-top: 3px solid $content_color
+
+  & .job_name
+    +top_center(60%, 20%, 30%)
     font-size: 36px
-    color: $content_color
-    // border: 1px solid red
 
 .bottom
+  border: $border1
   position: relative
   height: 1200px
   background-color: white
   background-color: $content_color
-  // border: 2px solid red
   & .left,& .right
+    border: $border2
     display: inline-block
     box-sizing: border-box
     color: $banner_color
+
   & .left
     position: relative
     width: 25%
@@ -86,6 +108,7 @@ html
     border-radius: 6px
     // border: 2px solid red
     & .introduce
+      border: $border3
       position: relative
       top: 20px
       padding: 25px
@@ -95,9 +118,11 @@ html
       & .list_title
         font-size: 24px
       & .bottom_line
-        border-bottom: 3px solid $banner_color
+        border-bottom: 2px solid $banner_color
+        margin: 10px 0px
+
     & .photo
-      // border: 2px solid red
+      border: $border3
       position: relative 
       border-radius: 100%
       width: 150px
@@ -106,6 +131,7 @@ html
       top: 20px
       box-shadow: $list_color 0 0 0 100px;
       & .pic
+        border: $border4
         position: relative 
         top: 10px
         // text
@@ -113,13 +139,13 @@ html
         color: $photo_color
         text-align: center
   & .right
+    border: $border2
     position: relative
     width: 60%
     height: 90%
     top: 5%
     left: 10%
     background-color: $content_color
-    border: 1px solid red
     vertical-align: top
   
 .end
@@ -128,15 +154,43 @@ html
   border-bottom-right-radius: $border_radius
   background-color: $banner_color
   // background-image: url("bg.png")
+  border: $border1
   & .extend
-    // border: 2px solid red
+    border: $border2
     height: 122px
- 
 
+svg
+  display: inline-block
+  width: 30px
+  height: 30px
+  & path 
+    fill: $banner_color
 
-  
+.intr_content
+  display: inline-block
+  vertical-align: top
 
+#mobile
+  & .st0
+    fill: $banner_color
+  & .st1
+    fill: $list_color
 
+.small_ldot
+  position: absolute
+  width: 10px
+  height: 10px
+  // border: 1px solid $content_color
+  border-radius: 100%
+  background-color: $content_color
+  top: -7px
 
-
-
+.small_rdot
+  position: absolute
+  width: 10px
+  height: 10px
+  // border: 1px solid $content_color
+  border-radius: 100%
+  background-color: $content_color
+  top: -7px
+  right: 0
