@@ -26,7 +26,7 @@ $border5: 0px solid purple
   text-align: center
   letter-spacing: 15px
   border: $border2
-
+ 
     
 // $photo_color: 
 //#A7BF9B
@@ -48,22 +48,23 @@ $border5: 0px solid purple
  
 body
   margin: 0
+  padding: 0
 html
-  // background-color: #fff1d0
   background-image: url($background_img)
   background-repeat: no-repeat
   background-size: 100% 110%
 
 .content
   position: relative
-  width: 1150px
+  width: 1150px 
   +lr_center()
-  // background-color: white
-  background-color: $banner_color
+  margin-top: 30px
+  margin-bottom: 80px
   border-radius: $border_radius
-  top: 30px
   box-shadow: 10px 10px 8px #888888;
-  border: 2px solid $banner_color
+  border: 1px solid $banner_color
+  
+  
 
 .top
   position: relative
@@ -73,7 +74,6 @@ html
   border-top-right-radius: $border_radius
   // background-image: url("bg.png")
   border: $border1
-
   & .t_right
     // top_center($top:15%, $r:5%, $w:60%, $word_size:42px)
     +top_center() 
@@ -86,40 +86,92 @@ html
     +top_center(60%, 20%, 30%)
     font-size: 36px
 
-.bottom
+.bottom 
   border: $border1
   position: relative
-  height: 1200px
-  background-color: white
   background-color: $content_color
   & .left,& .right
     border: $border2
     display: inline-block
     box-sizing: border-box
-    color: $banner_color
-
+    color: $banner_color 
   & .left
     position: relative
     width: 25%
-    height: 111%
-    top: -8%
+    height: 1500px
+    height: 100%
+
+    margin-top: -100px
+    margin-bottom: 35px
+    bottom: 0
     left: 5%
     overflow: hidden;
     border-radius: 6px
-    // border: 2px solid red
+    // z-index: 100
     & .introduce
+      height: 100%
       border: $border3
       position: relative
-      top: 20px
-      padding: 25px
+      margin: 0px
+      padding: 20px
+      padding-bottom: 50px
       background-color: $list_color
-      height: 100%
-      // border: 2px solid blue
       & .list_title
         font-size: 24px
       & .bottom_line
         border-bottom: 2px solid $banner_color
         margin: 10px 0px
+      & .bar_l
+        display: inline-block
+        position: relative
+      & .bar_r
+        display: inline-block
+        position: relative
+        vertical-align: middle
+        // vertical-align: middtople
+        & .bar_level_desc
+          font-size: 14px 
+          position: relative 
+          display: inline-block
+          text-align: right
+          width: 50px
+        & .bar_pic_border
+          position: relative
+          height: 18px
+          width: 200px
+          border: 1px solid $banner_color
+          & .dashline1
+            position: absolute
+            border-right: 1px dashed $banner_color
+            width: 50px
+            height: 18px
+          & .dashline2
+            position: absolute
+            border-right: 1px dashed $banner_color
+            width: 100px
+            height: 18px
+          & .dashline3
+            position: absolute
+            border-right: 1px dashed $banner_color
+            width: 150px
+            height: 18px
+
+          & .bar_pic_level
+            position: relative
+            height: 18px
+            width: 50px
+            background-color: $banner_color
+          & .level_1
+            width: 50px
+          & .level_2
+            width: 100px
+          & .level_3
+            width: 150px
+          & .level_4
+            width: 200px
+            
+
+
 
     & .photo
       border: $border3
@@ -128,7 +180,7 @@ html
       width: 150px
       height: 150px 
       +lr_center()
-      top: 20px
+      margin-top: 20px
       box-shadow: $list_color 0 0 0 100px;
       & .pic
         border: $border4
@@ -139,27 +191,68 @@ html
         color: $photo_color
         text-align: center
   & .right
-    border: $border2
     position: relative
+    border: $border2
     width: 60%
     height: 90%
-    top: 5%
+    padding-top: 3% 
+    padding-bottom: 3%
     left: 10%
     background-color: $content_color
     vertical-align: top
-  
+    & .rect_title
+      position: relative
+      height: 50px
+      background-color: $banner_color
+      color: #ffffff
+      font-size: 28px
+      padding: 5px
+      text-align: center
+    & .time_line_title
+      display: inline-block
+      position: relative
+      font-size: 24px
+    & .time_line_date
+      display: inline-block
+      position: relative
+      float: right
+      font-size: 18px
+      padding-top: 10px
+
+    & .time_line
+      position: relative
+      border-left: 4px solid #395c6b
+      top: -5px
+      margin-bottom: -18px
+      padding-bottom: 40px
+      & .pad26
+        padding-left: 26px 
+      & .pad40
+        padding-left: 40px 
+    & .line_length
+
+    & #hexgon
+      vertical-align: middle 
+      display: inline-block
+      position: relative
+      width: 25px
+      height: 25px
+      transform: translateX(-43%)
+      & .st0
+        fill: #395c6b
+      & .st1
+        fill: #d4cb92
+        
 .end
+  position: relative
   height: 75px
   border-bottom-left-radius: $border_radius
   border-bottom-right-radius: $border_radius
   background-color: $banner_color
   // background-image: url("bg.png")
-  border: $border1
-  & .extend
-    border: $border2
-    height: 122px
+  border: $border1 
 
-svg
+.icon
   display: inline-block
   width: 30px
   height: 30px
@@ -176,7 +269,7 @@ svg
   & .st1
     fill: $list_color
 
-.small_ldot
+.small_ldot, .small_rdot 
   position: absolute
   width: 10px
   height: 10px
@@ -184,13 +277,48 @@ svg
   border-radius: 100%
   background-color: $content_color
   top: -7px
-
 .small_rdot
-  position: absolute
-  width: 10px
-  height: 10px
-  // border: 1px solid $content_color
-  border-radius: 100%
-  background-color: $content_color
-  top: -7px
   right: 0
+
+
+.ability_l, .ability_r
+  vertical-align: middle
+  position: relative
+  display: inline-block
+.ability_l
+  width: 55%
+  font-size: 15px
+.ability_r 
+  width: 40%
+
+ 
+
+ 
+
+ 
+// ///////////////  content  ///////////////////
+//   ┬----------------------------------------┬
+//   |top                                     |
+//   ┴----------------------------------------┴
+//   ┬----------------------------------------┬
+//   |bottom                                  |
+//   |  ├--left                               |
+//   |  |     ├--photo                        |
+//   |  |     ┴--introduce                    |
+//   |  |                                     |
+//   |  ┴--right                              |
+//   |                                        |
+//   |                                        |
+//   |                                        |
+//   |                                        |
+//   |                                        |
+//   |                                        |
+//   |                                        |
+//   ┴----------------------------------------┴
+//   ┬----------------------------------------┬
+//   |end                                     |
+//   ┴----------------------------------------┴
+//    
+///////////////////////////////////////////////
+
+// ├----------------------------------------┤
