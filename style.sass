@@ -12,6 +12,8 @@ $border3: 0px solid green
 $border4: 0px solid orange
 $border5: 0px solid purple
 
+$time_line_left: 21%
+
 @mixin lr_center()
   margin-left: auto
   margin-right: auto
@@ -203,17 +205,20 @@ html
       padding: 5px
       text-align: center
     & .time_line_title
+      left: $time_line_left
       display: inline-block
       position: relative
       font-size: 24px
     & .time_line_date
       display: inline-block
-      position: relative
+      position: absolute
       float: right
-      font-size: 18px
+      font-size: 16px
       padding-top: 10px
 
     & .time_line
+      width: 79%
+      left: $time_line_left
       position: relative
       border-left: 4px solid #395c6b
       top: -5px
@@ -224,6 +229,7 @@ html
       & .pad40
         padding-left: 40px 
     & .hexgon
+      left: $time_line_left
       vertical-align: middle 
       display: inline-block
       position: relative
@@ -284,9 +290,14 @@ html
   width: 40%
 
  
-
- 
-
+#arrow
+  width: 30px
+  height: 30px
+  & .st0
+    fill: $banner_color
+  & .st1
+    fill: $list_color
+    
  
 // ///////////////  content  ///////////////////
 //   ┬----------------------------------------┬

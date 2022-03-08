@@ -229,6 +229,7 @@ html {
 }
 
 .bottom .right .time_line_title {
+  left: 21%;
   display: inline-block;
   position: relative;
   font-size: 24px;
@@ -236,13 +237,15 @@ html {
 
 .bottom .right .time_line_date {
   display: inline-block;
-  position: relative;
+  position: absolute;
   float: right;
-  font-size: 18px;
+  font-size: 16px;
   padding-top: 10px;
 }
 
 .bottom .right .time_line {
+  width: 79%;
+  left: 21%;
   position: relative;
   border-left: 4px solid #395c6b;
   top: -5px;
@@ -259,6 +262,7 @@ html {
 }
 
 .bottom .right .hexgon {
+  left: 21%;
   vertical-align: middle;
   display: inline-block;
   position: relative;
@@ -334,5 +338,18 @@ html {
 
 .ability_r {
   width: 40%;
+}
+
+#arrow {
+  width: 30px;
+  height: 30px;
+}
+
+#arrow .st0 {
+  fill: #39434f;
+}
+
+#arrow .st1 {
+  fill: #d4d3d5;
 }
 /*# sourceMappingURL=style.css.map */
