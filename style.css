@@ -87,8 +87,6 @@ html {
 .bottom .left {
   position: relative;
   width: 25%;
-  height: 1500px;
-  height: 100%;
   margin-top: -100px;
   margin-bottom: 35px;
   bottom: 0;
@@ -260,7 +258,7 @@ html {
   padding-left: 40px;
 }
 
-.bottom .right #hexgon {
+.bottom .right .hexgon {
   vertical-align: middle;
   display: inline-block;
   position: relative;
@@ -270,11 +268,11 @@ html {
           transform: translateX(-43%);
 }
 
-.bottom .right #hexgon .st0 {
+.bottom .right .hexgon .st0 {
   fill: #395c6b;
 }
 
-.bottom .right #hexgon .st1 {
+.bottom .right .hexgon .st1 {
   fill: #d4cb92;
 }
 
