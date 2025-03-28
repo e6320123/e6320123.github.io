@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  zoom: 67%;
+  /* zoom: 67%; */
 }
 
 html {
@@ -192,10 +192,10 @@ aside .introduce .bar_r .bar_pic_border .level_4 {
 aside .photo {
   position: relative;
   border-radius: 100%;
-  /* width: 150px;
-  height: 150px; */
-  width: 9rem;
-  height: 9rem;
+  width: 150px;
+  height: 150px;
+  /* width: 9rem;
+  height: 9rem; */
   margin: 0 auto;
   margin-top: 20px;
   -webkit-box-shadow: #d4d3d5 0 0 0 100px;
@@ -205,8 +205,8 @@ aside .photo {
 
 aside .photo .pic {
   position: absolute;
-  /* font-size: 81px; */
-  font-size: 5rem;
+  font-size: 81px;
+  /* font-size: 5rem; */
   color: #9A9A9B;
   top:50%;
   left:50%;
