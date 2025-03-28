@@ -5,7 +5,7 @@ body {
 }
 
 html {
-  background-image: url("daly.png");
+  background-image: url("marble.png");
   background-repeat: no-repeat;
   background-size: 100% 110%;
 }
@@ -186,7 +186,6 @@ html {
 }
 
 .bottom .left .photo {
-  border: 0px solid green;
   position: relative;
   border-radius: 100%;
   width: 150px;
@@ -199,12 +198,12 @@ html {
 }
 
 .bottom .left .photo .pic {
-  border: 0px solid orange;
-  position: relative;
-  top: 10px;
+  position: absolute;
   font-size: 81px;
   color: #9A9A9B;
-  text-align: center;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }
 
 .bottom .right {
@@ -353,4 +352,6 @@ html {
 #arrow .st1 {
   fill: #d4d3d5;
 }
-/*# sourceMappingURL=style.css.map */
+.info{
+  font-size: 20px;
+}
