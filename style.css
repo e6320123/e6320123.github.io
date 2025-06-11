@@ -192,18 +192,13 @@ aside .photo {
   height: 150px;
   margin: 0 auto;
   margin-top: 20px; 
-  background-color: #338aee; 
+  background-color: #7592b4; 
+  overflow: hidden;
 }
 
-aside .photo .pic {
-  position: absolute;
-  font-size: 81px;
-  color: #9A9A9B;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-}
-
+aside .photo img { 
+  width: 100%; 
+} 
 
 main .right .rect_title {
   position: relative;
