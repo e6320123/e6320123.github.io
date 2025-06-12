@@ -1,17 +1,8 @@
 body {
   margin: 0;
-  padding: 0;
-  /* transform: scale(0.9);  縮小90% */
-  /* transform-origin: top ;  設定縮放的基準點 */
-}
-
-html {
-  background-image: url("marble.png");
-  background-repeat: no-repeat;
-  background-size: 100% 110%;
+  padding: 0; 
 }
  
-
 header {
   background-color: #39434f;
   font-size: 42px;
@@ -51,6 +42,14 @@ header .spilt_line {
 }
 .right_dot {
   right: 0;
+}
+@media screen and (max-width: 767px) { 
+  header h1, header h2 {  
+    font-size: 26px;
+  }  
+  header .spilt_line {
+    width: 80%;
+  } 
 }
 aside, main .right {
   border: 0px solid blue;
@@ -208,6 +207,7 @@ main .right .rect_title {
   font-size: 28px;
   padding: 5px;
   text-align: center;
+  line-height: 50px;
 }
 
 main .right .time_line_title {
@@ -234,7 +234,20 @@ main .right .time_line {
   margin-bottom: -18px;
   padding-bottom: 40px;
 }
-
+main .right .flex_date{
+  display: flex;
+} 
+@media screen and (max-width: 767px) { 
+  main .right .time_line_date { 
+    font-size: 12px;
+  }
+  main .right .flex_date{
+    flex-direction: column;
+  }
+  main .right .flex_date>div{
+    text-align: center;
+  }
+}
 main .right .time_line .pad26 {
   padding-left: 26px;
 }
@@ -321,4 +334,10 @@ footer {
 }
 .my_intro{
   font-size: 20px;
+  padding: 15px 0;
+}
+@media screen and (max-width: 767px) { 
+  .my_intro{
+    padding: 15px 5px;
+  }
 }
